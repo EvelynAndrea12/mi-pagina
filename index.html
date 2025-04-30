@@ -2,17 +2,25 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Proyecto Básico</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mundo Animal</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
-    <h1>Bienvenido a mi sitio web</h1>
+    <h1>Mundo Animal</h1>
+    <nav>
+      <button onclick="filtrar('todos')">Todos</button>
+      <button onclick="filtrar('doméstico')">Domésticos</button>
+      <button onclick="filtrar('salvaje')">Salvajes</button>
+      <button onclick="filtrar('marino')">Marinos</button>
+    </nav>
   </header>
-  <main>
-    <p>Este es un sitio web básico usando HTML y CSS.</p>
-    <button>Haz clic aquí</button>
+
+  <main id="galeria">
+    <!-- Animal cards se insertan aquí con JavaScript -->
   </main>
+
+  <script src="app.js"></script>
 </body>
 </html>
